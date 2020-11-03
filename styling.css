@@ -1,4 +1,4 @@
-#header{
+#main{
     background-color: darkseagreen;
     height: 1000px;
 }
@@ -27,4 +27,23 @@ img {
     border-top-width: 0px;
     margin-left: 601px;
     background-color: darkseagreen;
+    position: fixed;
+  }
+  .upgradebtn {
+    border-left-style: solid;
+    border-left-width: 0px;
+    border-top-style: solid;
+    border-right-width: 0px;
+    border-right-style: solid;
+    border-bottom-width: 0px;
+    border-bottom-style: solid;
+    border-top-width: 0px;
+    margin-left: 601px;
+    background-color: darkseagreen;
+    position: fixed;
+    left: 332px;
+    right: 130px;
+    top: 853px;
+    font-family: monospace;
+    border-radius: 50%;
   }
