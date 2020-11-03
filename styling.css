@@ -16,7 +16,10 @@ img {
     margin-right: auto;
     width: 98%;
   }
-  .button {
+  .buttongroup.upgradebtn:hover {
+    background-color: #3e8e41;
+  }
+  .button{
     border-left-style: solid;
     border-left-width: 0px;
     border-top-style: solid;
@@ -28,6 +31,7 @@ img {
     margin-left: 601px;
     background-color: darkseagreen;
     position: fixed;
+    border-radius: 50%;
   }
   .upgradebtn {
     border-left-style: solid;
@@ -45,5 +49,5 @@ img {
     right: 130px;
     top: 853px;
     font-family: monospace;
-    border-radius: 50%;
+    border-radius: 12px;
   }
