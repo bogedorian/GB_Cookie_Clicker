@@ -16,23 +16,21 @@ img {
     margin-right: auto;
     width: 98%;
   }
-  .buttongroup.upgradebtn:hover {
+  .buttongroup{
+  background-color: #4CAF50; /* Green */
+  border: 1px solid green;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  width: 150px;
+  display: block;
+}
+  .autoclick:hover{
     background-color: #3e8e41;
-  }
-  .button{
-    border-left-style: solid;
-    border-left-width: 0px;
-    border-top-style: solid;
-    border-right-width: 0px;
-    border-right-style: solid;
-    border-bottom-width: 0px;
-    border-bottom-style: solid;
-    border-top-width: 0px;
-    margin-left: 601px;
-    background-color: darkseagreen;
-    position: fixed;
-    border-radius: 50%;
-  }
+}
   .upgradebtn {
     border-left-style: solid;
     border-left-width: 0px;
@@ -49,5 +47,40 @@ img {
     right: 130px;
     top: 853px;
     font-family: monospace;
-    border-radius: 12px;
+    border-radius: 4px;
+    padding: 10px 24px;
   }
+  .autoclick {
+    border-left-style: solid;
+    border-left-width: 0px;
+    border-top-style: solid;
+    border-right-width: 0px;
+    border-right-style: solid;
+    border-bottom-width: 0px;
+    border-bottom-style: solid;
+    border-top-width: 0px;
+    margin-left: 601px;
+    background-color: darkseagreen;
+    position: fixed;
+    left: 332px;
+    right: 130px;
+    top: 853px;
+    font-family: monospace;
+    border-radius: 4px;
+    padding: 10px 24px;
+  }
+  .button{
+    border-left-style: solid;
+    border-left-width: 0px;
+    border-top-style: solid;
+    border-right-width: 0px;
+    border-right-style: solid;
+    border-bottom-width: 0px;
+    border-bottom-style: solid;
+    border-top-width: 0px;
+    margin-left: 601px;
+    background-color: darkseagreen;
+    position: fixed;
+    border-radius: 50%;
+  }
+ 
