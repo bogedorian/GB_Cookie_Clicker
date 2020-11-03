@@ -1,0 +1,30 @@
+#header{
+    background-color: darkseagreen;
+    height: 1000px;
+}
+div.cookies {
+    font-size: 120px;
+    text-align: center;
+}
+img {
+    width: 1400px;
+    height: 700px;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 98%;
+  }
+  .button {
+    border-left-style: solid;
+    border-left-width: 0px;
+    border-top-style: solid;
+    border-right-width: 0px;
+    border-right-style: solid;
+    border-bottom-width: 0px;
+    border-bottom-style: solid;
+    border-top-width: 0px;
+    margin-left: 601px;
+    background-color: darkseagreen;
+  }
