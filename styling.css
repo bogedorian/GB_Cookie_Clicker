@@ -5,10 +5,12 @@
 div.cookies {
     font-size: 120px;
     text-align: center;
+    position: relative;
 }
 img {
     width: 1400px;
     height: 700px;
+    position: relative;
 }
 .center {
     display: block;
@@ -16,20 +18,21 @@ img {
     margin-right: auto;
     width: 98%;
   }
-  .buttongroup{
-  background-color: #4CAF50; /* Green */
-  border: 1px solid green;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  font-size: 16px;
-  cursor: pointer;
-  width: 150px;
-  display: block;
-}
+  .buttongroup {
+    border: 1px solid green;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+  }
   .autoclick:hover{
     background-color: #3e8e41;
+}
+.upgradebtn:hover{
+  background-color: #3e8e41;
 }
   .upgradebtn {
     border-left-style: solid;
@@ -43,7 +46,7 @@ img {
     margin-left: 601px;
     background-color: darkseagreen;
     position: fixed;
-    left: 332px;
+    left: 139px;
     right: 130px;
     top: 853px;
     font-family: monospace;
@@ -62,12 +65,13 @@ img {
     margin-left: 601px;
     background-color: darkseagreen;
     position: fixed;
-    left: 332px;
+    left: 437px;
     right: 130px;
     top: 853px;
     font-family: monospace;
     border-radius: 4px;
     padding: 10px 24px;
+
   }
   .button{
     border-left-style: solid;
