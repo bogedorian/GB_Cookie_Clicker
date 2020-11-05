@@ -1,18 +1,18 @@
-#main{
+  #main{
     background-color: darkseagreen;
     height: 1000px;
 }
-div.cookies {
+  div.cookies {
     font-size: 120px;
     text-align: center;
     position: relative;
 }
-img {
+  img {
     width: 1400px;
     height: 700px;
     position: relative;
 }
-.center {
+  .center {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -31,9 +31,10 @@ img {
   .autoclick:hover{
     background-color: #3e8e41;
 }
-.upgradebtn:hover{
+  .upgradebtn:hover{
   background-color: #3e8e41;
 }
+
   .upgradebtn {
     border-left-style: solid;
     border-left-width: 0px;
@@ -87,4 +88,6 @@ img {
     position: fixed;
     border-radius: 50%;
   }
- 
+ #total {
+   margin-right: 20px;
+ }
