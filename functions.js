@@ -1,22 +1,24 @@
-var cookies=0;
 
-var AddCookies=1;
+export var cookies = 0;
 
-var Upgrade=2;
+export var AddCookies = 1;
 
-var Autoclick=1;
+export var Upgrade = 2;
 
-var upprice=30;
+export var Autoclick = 1;
 
-var autoprice=60;
+export var upprice = 30;
 
-function Add(){
-cookies=cookies+AddCookies
-document.getElementById("total").innerHTML=cookies
+export var autoprice = 60;
+
+
+export function Add(){
+cookies = cookies+AddCookies
+document.getElementById("total").innerHTML = cookies
 }
 
 document.getElementById("upgrbtn").onclick = function() {upgrd()};
-function upgrd() 
+export function upgrd() 
 {
     if (cookies>=upprice)
     {
@@ -33,7 +35,7 @@ function upgrd()
 }
 
 document.getElementById("acpr").onclick = function() {auto()};
-function auto(){
+export function auto(){
     if (cookies>=autoprice)
     {
         cookies=cookies-autoprice
@@ -42,6 +44,7 @@ function auto(){
         {
             cookies=cookies+Autoclick
             document.getElementById("acpr").innerHTML = autoprice
+            document.getElementById("total").innerHTML = cookies
         }
                 ,1000);
         alert("You just purchased an upgrade")
@@ -53,3 +56,4 @@ function auto(){
         alert("Not enough cookies")
     }
 }
+
