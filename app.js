@@ -1,22 +1,14 @@
-const http = require("http");
-const fs = require("fs");
-const path = require("path");
+const express = require("express")
+const app = express()
+const port = 3000
 
-const hostname = "127.0.0.1";
-const port = 3000;
+app.use(express.static("public"))
+app.use("/css", express.static(__dirname + "public/css"))
+app.use("/js", express.static(__dirname + "public/js"))
+app.use("/img", express.static(__dirname + "public/img"))
 
-fs.readFile("clicker.html", (err, html) => {
-    if(err){
-        throw err
-    }
-    const server = http.createServer((req, res) => {
-        res.statusCode = 200;
-        res.setHeader("Content-type", "text/html");
-        res.write(html);
-        res.end();
-    })
-    
-    server.listen(port, hostname, () => {
-        console.log("Server started on port "+port);
-    });
-});
+app.get("", (req, res) => {
+    res.sendFile(__dirname + "/public/clicker.html")
+})
+
+app.listen(port, () => console.log("Current port is "+ port))
