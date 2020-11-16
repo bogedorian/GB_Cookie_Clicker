@@ -1,38 +1,24 @@
 
-export var cookies = 0;
+var cookies = 0;
 
-export var AddCookies = 1;
+var AddCookies = 1;
 
-export var Upgrade = 2;
+var Upgrade = 2;
 
-export var Autoclick = 1;
+var Autoclick = 1;
 
-export var upprice = 30;
+var upprice = 30;
 
-export var autoprice = 60;
-
-function setCookie(){
-    cookies = cookies;
-    upprice = upprice
-    autoprice = autoprice
-    Autoclick = Autoclick
-    AddCookies = AddCookies
-    Upgrade = Upgrade
-    document.cookie = setCookie
-}
-
-function getCookie(){
-    console.log(document.cookie);
-}
+var autoprice = 60;
 
 
-export function Add(){
+function Add(){
 cookies = cookies+AddCookies
 document.getElementById("total").innerHTML = cookies
 }
 
 document.getElementById("upgrbtn").onclick = function() {upgrd()};
-export function upgrd() 
+function upgrd() 
 {
     if (cookies>=upprice)
     {
@@ -49,7 +35,7 @@ export function upgrd()
 }
 
 document.getElementById("acpr").onclick = function() {auto()};
-export function auto(){
+function auto(){
     if (cookies>=autoprice)
     {
         cookies=cookies-autoprice

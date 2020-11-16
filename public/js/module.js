@@ -1,4 +1,4 @@
-import { Add, upgrd, auto, cookies, AddCookies, Upgrade, Autoclick, upprice, autoprice } from "./functions.js"
+import { Add, upgrd, auto, cookies, AddCookies, Upgrade, Autoclick, upprice, autoprice } from "public/functions.js"
 
 const cookies = cookies
 const AddCookies = AddCookies
