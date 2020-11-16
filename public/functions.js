@@ -11,7 +11,6 @@ var upprice = 30;
 
 var autoprice = 60;
 
-
 function Add(){
 cookies = cookies+AddCookies
 document.getElementById("total").innerHTML = cookies

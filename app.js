@@ -1,6 +1,27 @@
 const express = require("express")
 const app = express()
 const port = 3000
+var http = require ("http")
+
+var Cookies = require ("cookies")
+
+
+var server = http.createServer(function (req, res){
+var scookies = new Cookies(req, res, {keys: keys})
+
+var lastCookies = scookies.get('lastCookies', {signed: true})
+
+scookies.set('lastCookies', cookies, {signed: true})
+
+if (!lastCookies) {
+    res.setHeader('Content-Type', 'text/plain')
+    res.end("Welcome!")
+}   else {
+    res.setHeader('Content-Type', 'text/plain')
+    res.end("Welcome back! You baked " +lastCookies+ " Cookies last time")
+}
+})
+
 
 app.use(express.static("public"))
 app.use("/css", express.static(__dirname + "public/css"))
