@@ -18,12 +18,7 @@
     transform: scale(1.05);
   }
 
-  #upgrdbtn , #autoclick{
-    display: inline-block;
-    margin-right: 5px;
-  }
   .buttongroup {
-    border: 1px solid green;
     color: black;
     padding: 15px 32px;
     text-decoration: black;
@@ -33,6 +28,10 @@
     outline: none;
     text-align: center;
     align-items: center;
+    background-color: darkseagreen;
+    border: 0px;
+    margin: 0 auto;
+    position: relative;
 }
   
   .autoclick:hover{
@@ -42,38 +41,6 @@
   background-color: #3e8e41;
 }
 
-  .upgradebtn {
-    border-left-style: solid;
-    border-left-width: 0px;
-    border-top-style: solid;
-    border-right-width: 0px;
-    border-right-style: solid;
-    border-bottom-width: 0px;
-    border-bottom-style: solid;
-    border-top-width: 0px;
-    background-color: darkseagreen;
-    position: relative;
-    font-family: monospace;
-    border-radius: 4px;
-    padding: 10px 24px;
-    margin: 0 auto;
-  }
-  .autoclick {
-    border-left-style: solid;
-    border-left-width: 0px;
-    border-top-style: solid;
-    border-right-width: 0px;
-    border-right-style: solid;
-    border-bottom-width: 0px;
-    border-bottom-style: solid;
-    border-top-width: 0px;
-    background-color: darkseagreen;
-    position: relative;
-    font-family: monospace;
-    border-radius: 4px;
-    padding: 10px 24px;
-    margin: 0 auto;
-  }
   .button{
     margin: 0 auto;
     display:block;
