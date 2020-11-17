@@ -10,16 +10,17 @@
     display: flex;
     justify-content: center;
   }
-  img {
+  center {
     width: 700px;
   } 
   
-  img:active{
+  center:active{
     transform: scale(1.05);
   }
 
   #upgrdbtn , #autoclick{
     display: inline-block;
+    margin-right: 5px;
   }
   .buttongroup {
     border: 1px solid green;
@@ -27,10 +28,11 @@
     padding: 15px 32px;
     text-decoration: black;
     display: inline-block;
-    font-size: 16px;
+    font-size: 50px;
     cursor: pointer;
     outline: none;
     text-align: center;
+    align-items: center;
 }
   
   .autoclick:hover{
@@ -50,10 +52,11 @@
     border-bottom-style: solid;
     border-top-width: 0px;
     background-color: darkseagreen;
-    position: fixed;
+    position: relative;
     font-family: monospace;
     border-radius: 4px;
     padding: 10px 24px;
+    margin: 0 auto;
   }
   .autoclick {
     border-left-style: solid;
@@ -65,10 +68,11 @@
     border-bottom-style: solid;
     border-top-width: 0px;
     background-color: darkseagreen;
-    position: fixed;
+    position: relative;
     font-family: monospace;
     border-radius: 4px;
     padding: 10px 24px;
+    margin: 0 auto;
   }
   .button{
     margin: 0 auto;
@@ -85,4 +89,8 @@
   }
  #total {
    margin-right: 20px;
+ }
+ .upgdesign{
+   height: 100px;
+   width: 250px;
  }
