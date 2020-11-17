@@ -6,27 +6,33 @@
     text-align: center;
     position: relative;
 }
+  div.asd{
+    display: flex;
+    justify-content: center;
+  }
   img {
-    width: 1400px;
-    height: 700px;
-    position: relative;
-}
-  .center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 98%;
+    width: 700px;
+  } 
+  
+  img:active{
+    transform: scale(1.05);
+  }
+
+  #upgrdbtn , #autoclick{
+    display: inline-block;
   }
   .buttongroup {
     border: 1px solid green;
     color: black;
     padding: 15px 32px;
-    text-align: center;
     text-decoration: black;
     display: inline-block;
     font-size: 16px;
     cursor: pointer;
-  }
+    outline: none;
+    text-align: center;
+}
+  
   .autoclick:hover{
     background-color: #3e8e41;
 }
@@ -43,12 +49,8 @@
     border-bottom-width: 0px;
     border-bottom-style: solid;
     border-top-width: 0px;
-    margin-left: 601px;
     background-color: darkseagreen;
     position: fixed;
-    left: 139px;
-    right: 130px;
-    top: 853px;
     font-family: monospace;
     border-radius: 4px;
     padding: 10px 24px;
@@ -62,30 +64,24 @@
     border-bottom-width: 0px;
     border-bottom-style: solid;
     border-top-width: 0px;
-    margin-left: 601px;
     background-color: darkseagreen;
     position: fixed;
-    left: 437px;
-    right: 130px;
-    top: 853px;
     font-family: monospace;
     border-radius: 4px;
     padding: 10px 24px;
-
   }
   .button{
-    border-left-style: solid;
-    border-left-width: 0px;
-    border-top-style: solid;
-    border-right-width: 0px;
-    border-right-style: solid;
-    border-bottom-width: 0px;
-    border-bottom-style: solid;
-    border-top-width: 0px;
-    margin-left: 601px;
+    margin: 0 auto;
+    display:block;
     background-color: darkseagreen;
-    position: fixed;
+    position: relative;
     border-radius: 50%;
+    text-align: center;
+    align-items: center;
+    float: center;
+    padding: 0%;
+    border: darkseagreen;
+    outline: none;
   }
  #total {
    margin-right: 20px;
