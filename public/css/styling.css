@@ -17,21 +17,22 @@
   center:active{
     transform: scale(1.05);
   }
-
+  
   .buttongroup {
     color: black;
     padding: 15px 32px;
     text-decoration: black;
-    display: inline-block;
     font-size: 50px;
     cursor: pointer;
     outline: none;
-    text-align: center;
-    align-items: center;
     background-color: darkseagreen;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-direction: right;
+    float: right;
+    flex-flow: wrap;
     border: 0px;
-    margin: 0 auto;
-    position: relative;
 }
   
   .autoclick:hover{
@@ -57,7 +58,30 @@
  #total {
    margin-right: 20px;
  }
- .upgdesign{
-   height: 100px;
-   width: 250px;
- }
+#shop{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: darkseagreen;
+  padding: 10px;
+  justify-content: center;
+  text-align: -webkit-center;
+}
+.upgradebtn{
+  grid-column-start: 1;
+  grid-column-end: 1;
+}
+.autoclick{
+  grid-column-start: 1;
+  grid-column-end: 1;
+}
+.bakery{
+  grid-column-start: 1;
+  grid-column-end: 1;
+  font-size: 50pt;
+  text-align: center;
+  margin-right: 45px;
+}
+img.bakery{
+  grid-column-start: 1;
+  grid-column-end: 1;
+}

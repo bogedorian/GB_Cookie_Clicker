@@ -1,5 +1,5 @@
 
-var cookies = 0;
+var cookies = getcookies();
 
 var AddCookies = 1;
 
@@ -14,6 +14,7 @@ var autoprice = 60;
 function Add(){
 cookies = cookies+AddCookies
 document.getElementById("total").innerHTML = cookies
+savecookies()
 }
 
 document.getElementById("upgrbtn").onclick = function() {upgrd()};
@@ -54,5 +55,23 @@ function auto(){
     {
         alert("Not enough cookies")
     }
+
+
+
 }
 
+function savecookies(){
+    document.cookie="cookies=" + cookies
+    console.log(document.cookie)
+}
+
+function getcookies(){
+    let cookiestring=document.cookie;
+    let string= parseInt(cookiestring.split("=")[1])
+    console.log(string)
+    if (string == NaN || string == undefined){
+        string = 0
+    }
+    console.log(string)
+    return string
+}

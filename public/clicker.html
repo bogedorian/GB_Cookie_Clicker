@@ -5,6 +5,7 @@
     <title>Cookie Clicker</title>
     <link rel=stylesheet href="css/styling.css" type="text/css">
     <script src="functions.js"></script>
+    <!--<script type="module" src="js/module.js"></script>-->
 </head>
 
 <body>
@@ -13,11 +14,13 @@
     <div class="cookies"><span id="total">0</span>Cookies</div>
 </div> 
 <div id="asd">
-    <button class="button"><img src="img/cookie.png" alt="cookie" class="center" onclick="Add()"></button>
+    <button class="button"><img src="img/cookie.png" width=500 height=500 alt="cookie" class="center" onclick="Add()"></button>
 </div> 
-<div id=upgrades>
-    <button id=upgrbtn class="buttongroup upgradebtn" onclick="upgrd()"><img src="img/upgrade.png" id="upgdesign"><br><span id="upgpr">30</span><img src="img/cookie.png" width="50" height="50"></button> 
-    <button id=aclbtn class="buttongroup autoclick" onclick="auto()"><img src="img/autoclick.png"><br><span id="acpr">60</span><img src="img/cookie.png" width="50" height="50"></button>  
+<div id=shop>
+    <span class="bakery">Store</span>
+    <img src="img/shop.png" width="250" height="250" class="bakery">
+    <button id=upgrbtn class="buttongroup upgradebtn" onclick="upgrd()"><img src="img/upgrade.png" width="125" height="50" id="upgdesign"><br><span id="upgpr">30</span><img src="img/cookie.png" width="50" height="50"></button> 
+    <button id=aclbtn class="buttongroup autoclick" onclick="auto()"><img src="img/autoclick.png" width="125" height="50"><br><span id="acpr">60</span><img src="img/cookie.png" width="50" height="50"></button>  
 </div>
 
 </body>
