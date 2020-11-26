@@ -55,23 +55,20 @@ function auto(){
     {
         alert("Not enough cookies")
     }
-
-
-
 }
 
 function savecookies(){
-    document.cookie="cookies=" + cookies
-    console.log(document.cookie)
+    document.cookie="cookie=" + cookies, "expires = Tue, 19 Jan 2038 03:14:07 GMT"
+    console.log(document.cookie);
 }
 
 function getcookies(){
     let cookiestring=document.cookie;
-    let string= parseInt(cookiestring.split("=")[1])
-    console.log(string)
-    if (string == NaN || string == undefined){
-        string = 0
+    let string= parseInt(cookiestring.split("=")[1]);
+    console.log(string);
+    console.log(typeof string);
+    if (isNaN(string)){
+        string = 0;
     }
-    console.log(string)
-    return string
+    return string;
 }
