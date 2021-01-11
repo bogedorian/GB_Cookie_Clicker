@@ -58,7 +58,7 @@ function auto(){
 }
 
 function savecookies(){
-    document.cookie="cookie=" + cookies, "expires = Tue, 19 Jan 2038 03:14:07 GMT"
+    document.cookie='cookie=' + cookies; 'expires = Tue, 19 Jan 2038 03:14:07 GMT'
     console.log(document.cookie);
 }
 
